@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Users.master.cs" Inherits="deep.Users" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="Custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="sweetalert/dist/sweetalert2.min.js"></script>
+    <script src="sweetalert/dist/sweetalert2.all.min.js"></script>
+   
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+          <!-- Fixed navbar -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-item"  href="#"> <span> <img src="images/toggleicon.png" height="20px" width="20px"  /> deep</span> </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav ">
+                            <li class="active"><a href="Viewproduct1.aspx">Home</a></li>
+                            <li><a href="About.aspx">About</a></li>
+                            <li><a href="Contect.aspx">Contact</a></li>
+                            <li><a href="Service.aspx">Services</a></li>
+                                <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Items<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                     <li class="dropdown-header"> Men</li>
+                               <li><a href="#">Shirt</a> </li>
+                               <li ><a href="#">T-shirt</a> </li>
+                               <li><a href="#">Denims</a> </li>
+                               <li role="separator" class="dropdown-divider" style="color:red"></li>
+                               <li class="dropdown-header"> Women</li>
+                               <li><a href="#">Top</a> </li>
+                               <li><a href="#">laggings</a> </li>
+                               <li><a href="#">Denims</a> </li>
+                              <li role="separator" class="dropdown-divider"></li>    
+                                </ul>
+                            </li>
+                      
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="SignUppage.aspx">Registration</a></li>
+                         
+                       
+                        </ul>
+                         <ul class="nav navbar-nav center">
+                            <li><a href="Loginpage.aspx">Login</a></li>
+                         
+                       
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+            <hr />
+
+   <div class="container" style="margin-top:60px" > 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/img1.jpg" alt="Los Angeles" style="width:100%; height:116px;">
+      </div>
+         
+      <div class="item">
+        <img src="images/img2.jpg" alt="Chicago"style="width:100%; height:116px;">
+          <div class=" carousel-caption"> 
+              <h3>Men shopping</h3>
+              <p> 20% off</p>
+              <p> <a  class="btn btn-lg  btn-primary">By Now</a></p>
+          </div>
+      </div>
+         <div class="item">
+        <img src="images/img3.jpg" alt="Chicago" style="width:100%; height:116px;">
+      </div>
+         <div class="item">
+        <img src="images/img4.jpg" alt="Chicago" style="width:100%; height:116px;">
+      </div>
+         <div class="item">
+        <img src="images/img7.jpg" alt="Chicago"style="width:100%; height:116px;">
+      </div>
+          <div class="item">
+        <img src="images/img8.jpg" alt="Chicago" style="width:100%; height:116px;">
+      </div>
+      <div class="item">
+        <img src="images/img9.jpg" alt="Chicago" style="width:100%; height:116px;">
+      </div>
+          <div class="item">
+        <img src="images/img10.jpg" alt="Chicago" style="width:100%; height:116px;">
+      </div>
+     <div class="item">
+        <img src="images/img11.jpg" alt="Chicago" style="width:100%; height:116px;">
+      </div>
+        <div class="item">
+        <img src="images/img12.jpg" alt="Chicago" style="width:100%; height:116px;">
+      </div>
+        <div class="item">
+        <img src="images/img5.jpg" alt="Chicago" style="width:100%; height:116px;"> 
+      </div>
+        <div class="item">
+        <img src="images/img6.jpg" alt="Chicago" style="width:100%; height:116px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+
+  </div>
+ </div>
+           
+      
+            <div class="container-fluid" style="margin-top:60px">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+                </asp:ContentPlaceHolder>
+            </div>
+
+             <div class="container-fluid">
+                 <footer >
+                    <div class="container">
+                        <p class="pull-right"><a href="#" >Back To Page </a>  </p>
+                        <p> 
+                            <a href="Index.aspx">Home</a>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="Index.aspx">About</a>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="Index.aspx">Contect</a>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="Index.aspx">Services</a>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                        </p>
+                        <hr />
+                    </div>
+                 </footer>
+             </div>
+        </div>
+    </form>
+</body>
+</html>

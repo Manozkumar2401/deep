@@ -1,0 +1,380 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{920B7EF1-BF52-4921-B066-A18D099783A9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>deep</RootNamespace>
+    <AssemblyName>deep</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Admin\Addbrand.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\AddSize.aspx" />
+    <Content Include="Admin\BrandName.aspx" />
+    <Content Include="Admin\AddCategory.aspx" />
+    <Content Include="Admin\AddGender.aspx" />
+    <Content Include="Admin\Profilepage.aspx" />
+    <Content Include="Admin\Manageuser.aspx" />
+    <Content Include="Admin\AddSubCategory.aspx" />
+    <Content Include="Admin\WebForm3.aspx" />
+    <Content Include="Contect.aspx" />
+    <Content Include="Custom.css" />
+    <Content Include="datatables files\datatables\css\dataTables.bootstrap4.min.css" />
+    <Content Include="datatables files\datatables\css\icon-font.min.css" />
+    <Content Include="datatables files\datatables\css\jquery.dataTables.min.css" />
+    <Content Include="datatables files\datatables\css\responsive.bootstrap4.min.css" />
+    <Content Include="datatables files\datatables\css\responsive.dataTables.min.css" />
+    <Content Include="datatables files\datatables\images\sort_asc.png" />
+    <Content Include="datatables files\datatables\images\sort_asc_disabled.png" />
+    <Content Include="datatables files\datatables\images\sort_both.png" />
+    <Content Include="datatables files\datatables\images\sort_desc.png" />
+    <Content Include="datatables files\datatables\images\sort_desc_disabled.png" />
+    <Content Include="datatables files\datatables\js\buttons.bootstrap4.min.js" />
+    <Content Include="datatables files\datatables\js\buttons.flash.min.js" />
+    <Content Include="datatables files\datatables\js\buttons.html5.min.js" />
+    <Content Include="datatables files\datatables\js\buttons.print.min.js" />
+    <Content Include="datatables files\datatables\js\datatable-setting.js" />
+    <Content Include="datatables files\datatables\js\dataTables.bootstrap4.min.js" />
+    <Content Include="datatables files\datatables\js\dataTables.buttons.min.js" />
+    <Content Include="datatables files\datatables\js\dataTables.responsive.min.js" />
+    <Content Include="datatables files\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="datatables files\datatables\js\jszip.min.js" />
+    <Content Include="datatables files\datatables\js\pdfmake.min.js" />
+    <Content Include="datatables files\datatables\js\responsive.bootstrap4.min.js" />
+    <Content Include="datatables files\datatables\js\vfs_fonts.js" />
+    <Content Include="Forgetpassword.aspx" />
+    <Content Include="Ftpassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\7409460.png" />
+    <Content Include="images\age.png" />
+    <Content Include="images\em.png" />
+    <Content Include="images\img2.jpg" />
+    <Content Include="images\imgtv.jpg" />
+    <Content Include="images\img1.jpg" />
+    <Content Include="images\img10.jpg" />
+    <Content Include="images\img3.jpg" />
+    <Content Include="images\img4.jpg" />
+    <Content Include="images\img5.jpg" />
+    <Content Include="images\img7.jpg" />
+    <Content Include="images\img8.jpg" />
+    <Content Include="images\img9.png" />
+    <Content Include="images\ps.png" />
+    <Content Include="images\toggleicon.png" />
+    <Content Include="images\imgfootwear2.jpg" />
+    <Content Include="images\user.png" />
+    <Content Include="images\username.png" />
+    <Content Include="images\username1.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Loginpage.aspx" />
+    <Content Include="Service.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="styleloginsignup.css" />
+    <Content Include="SignUppage.aspx" />
+    <Content Include="sweetalert\dist\sweetalert2.all.js" />
+    <Content Include="sweetalert\dist\sweetalert2.all.min.js" />
+    <Content Include="sweetalert\dist\sweetalert2.css" />
+    <Content Include="sweetalert\dist\sweetalert2.js" />
+    <Content Include="sweetalert\dist\sweetalert2.min.css" />
+    <Content Include="sweetalert\dist\sweetalert2.min.js" />
+    <Content Include="sweetalert\jquery\jqery.js" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Viewproduct1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Addbrand.aspx.cs">
+      <DependentUpon>Addbrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Addbrand.aspx.designer.cs">
+      <DependentUpon>Addbrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddSize.aspx.cs">
+      <DependentUpon>AddSize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddSize.aspx.designer.cs">
+      <DependentUpon>AddSize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admins.Master.cs">
+      <DependentUpon>admins.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admins.Master.designer.cs">
+      <DependentUpon>admins.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BrandName.aspx.cs">
+      <DependentUpon>BrandName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BrandName.aspx.designer.cs">
+      <DependentUpon>BrandName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddGender.aspx.cs">
+      <DependentUpon>AddGender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddGender.aspx.designer.cs">
+      <DependentUpon>AddGender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Profilepage.aspx.cs">
+      <DependentUpon>Profilepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Profilepage.aspx.designer.cs">
+      <DependentUpon>Profilepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Manageuser.aspx.cs">
+      <DependentUpon>Manageuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Manageuser.aspx.designer.cs">
+      <DependentUpon>Manageuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddSubCategory.aspx.cs">
+      <DependentUpon>AddSubCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddSubCategory.aspx.designer.cs">
+      <DependentUpon>AddSubCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="connection.cs" />
+    <Compile Include="Contect.aspx.cs">
+      <DependentUpon>Contect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contect.aspx.designer.cs">
+      <DependentUpon>Contect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forgetpassword.aspx.cs">
+      <DependentUpon>Forgetpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forgetpassword.aspx.designer.cs">
+      <DependentUpon>Forgetpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ftpassword.aspx.cs">
+      <DependentUpon>Ftpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ftpassword.aspx.designer.cs">
+      <DependentUpon>Ftpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loginpage.aspx.cs">
+      <DependentUpon>Loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loginpage.aspx.designer.cs">
+      <DependentUpon>Loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="property.cs" />
+    <Compile Include="Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUppage.aspx.cs">
+      <DependentUpon>SignUppage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUppage.aspx.designer.cs">
+      <DependentUpon>SignUppage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.Master.cs">
+      <DependentUpon>Users.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.Master.designer.cs">
+      <DependentUpon>Users.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Viewproduct1.aspx.cs">
+      <DependentUpon>Viewproduct1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Viewproduct1.aspx.designer.cs">
+      <DependentUpon>Viewproduct1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\img2.webp" />
+    <Content Include="Admin\admins.Master" />
+    <Content Include="Users.Master" />
+    <Content Include="libman.json" />
+    <Content Include="datatables files\datatables\fonts\ionicons.ttf" />
+    <Content Include="datatables files\datatables\fonts\ionicons.woff" />
+    <Content Include="datatables files\datatables\fonts\themify.ttf" />
+    <Content Include="datatables files\datatables\fonts\themify.woff" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bootstrap\css\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57181</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57181/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
